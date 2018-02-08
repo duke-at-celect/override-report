@@ -5,7 +5,7 @@ import argparse
 
 def read_data():
 	rawData = file
-	df = pd.read_csv((rawData), skiprows=[0])
+	df = pd.read_csv(rawData)
 
 	# Create and fill new type columns to track store type
 	df['celect_fulfill_store_type'] = 'store'
